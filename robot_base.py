@@ -21,12 +21,19 @@ drive_base.distance_control.stall_tolerances(speed=20, time=100)
 # 2. Allow the heading PID controller to build up power faster when pushing against resistance
 drive_base.heading_control.pid(ki=2500)  # Default ki is around 1500–2000; higher = stronger push when stuck
 
-# Separate Magenta (pink/purple side), Red (true red), and Orange (amber/yellow side)
-Color.MAGENTA = Color(h=322, s=75, v=65)
-Color.RED = Color(h=0, s=92, v=55)
-Color.ORANGE = Color(h=18, s=90, v=75)
-Color.YELLOW = Color(h=48, s=90, v=85)
+# Chromatic Colors
+Color.RED = Color(h=356, s=96, v=36)
+Color.MAGENTA = Color(h=325, s=88, v=62)
+Color.ORANGE = Color(h=13, s=88, v=84)
+Color.YELLOW = Color(h=43, s=78, v=58)
 
+# Neutral & Ambient Colors
+Color.WHITE = Color(h=165, s=11, v=62)
+Color.LIGHT_GREY = Color(h=195, s=42, v=26)
+Color.DARK_GREY = Color(h=192, s=46, v=10)
+Color.NONE = Color(h=0, s=0, v=0)
+
+# Register all colors (including custom greys)
 color_sensor.detectable_colors([
     Color.RED,
     Color.BLUE,
@@ -34,6 +41,7 @@ color_sensor.detectable_colors([
     Color.MAGENTA,
     Color.ORANGE,
     Color.WHITE,
+    Color.DARK_GREY,
     Color.NONE,
 ])
 
