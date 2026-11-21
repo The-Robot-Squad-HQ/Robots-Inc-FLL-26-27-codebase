@@ -68,6 +68,8 @@ class mission_selector(fullbot):
                 self.hub.display.char(self.numtolet[4])
             elif readcolor == Color.WHITE:
                 self.hub.display.char(self.numtolet[5])
+            elif readcolor == Color.DARK_GREY:
+                self.hub.display.char(self.numtolet[6])
             elif readcolor == Color.NONE:
                 self.hub.display.icon(Icon.ARROW_LEFT)
             else:
