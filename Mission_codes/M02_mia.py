@@ -1,7 +1,7 @@
 #___________________________________________________________________________
 from robot_base import fullbot
 
-def mia():
+async def mia():
     robot = fullbot()
     robot.straight.drive(230, 250)
     robot.turn.Lwturn(158, 130, 250)
