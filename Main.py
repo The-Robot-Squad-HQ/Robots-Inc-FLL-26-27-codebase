@@ -8,6 +8,7 @@ from Mission_codes.M03_daphne import daphne
 from Mission_codes.M06_teemo import teemo
 from Mission_codes.M07_noahXremiXjiggle import noahXremiXjiggle
 from Mission_codes.M11_luke import luke
+from Mission_codes.M13_khai import khai
 from Mission_codes.M_UND_swapside import swapside
 
 from music import *
@@ -23,6 +24,7 @@ class mission_selector(fullbot):
             Color.ORANGE: [teemo, ants_go_marching],
             Color.BLUE: [noahXremiXjiggle, final_countdown],
             Color.NONE: [swapside, haydn_104_opening],
+            Color.DARK_GREY: [khai, haydn_104_opening]
         }
         self.numtolet = [
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
