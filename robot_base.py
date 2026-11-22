@@ -41,7 +41,7 @@ color_sensor.detectable_colors([
     Color.MAGENTA,
     Color.ORANGE,
     Color.WHITE,
-    Color.DARK_GREY,
+    Color.LIGHT_GREY,
     Color.NONE,
 ])
 

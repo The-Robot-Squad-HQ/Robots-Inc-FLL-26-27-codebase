@@ -24,7 +24,7 @@ class mission_selector(fullbot):
             Color.ORANGE: [teemo, ants_go_marching],
             Color.BLUE: [noahXremiXjiggle, final_countdown],
             Color.NONE: [swapside, haydn_104_opening],
-            Color.DARK_GREY: [khai, haydn_104_opening]
+            Color.LIGHT_GREY: [khai, haydn_104_opening]
         }
         self.numtolet = [
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
