@@ -7,7 +7,7 @@ from Mission_codes.M02_mia import mia
 from Mission_codes.M03_daphne import daphne
 from Mission_codes.M06_teemo import teemo
 from Mission_codes.M07_noahXremiXjiggle import noahXremiXjiggle
-from Mission_codes.M11_luke import luke
+from Mission_codes.M12_teemoXmia import teemoXmia
 from Mission_codes.M13_khai import khai
 from Mission_codes.M_UND_swapside import swapside
 
@@ -20,7 +20,7 @@ class mission_selector(fullbot):
             Color.RED: [daphne, haydn_104_opening],
             Color.YELLOW: [mia, haydn_104_opening],
             Color.MAGENTA: [wael, haydn_104_opening],
-            Color.WHITE: [luke, haydn_104_opening],
+            Color.WHITE: [teemoXmia, haydn_104_opening],
             Color.ORANGE: [teemo, ants_go_marching],
             Color.BLUE: [noahXremiXjiggle, final_countdown],
             Color.NONE: [swapside, haydn_104_opening],
