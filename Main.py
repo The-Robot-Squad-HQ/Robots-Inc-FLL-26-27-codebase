@@ -20,9 +20,9 @@ class mission_selector(fullbot):
             Color.RED: [daphne, haydn_104_opening],
             Color.YELLOW: [mia, haydn_104_opening],
             Color.MAGENTA: [wael, haydn_104_opening],
-            Color.WHITE: [teemoXmia, haydn_104_opening],
+            Color.WHITE: [teemoXmia, final_countdown],
             Color.ORANGE: [teemo, ants_go_marching],
-            Color.BLUE: [noahXremiXjiggle, final_countdown],
+            Color.LIGHT_BLUE: [noahXremiXjiggle, haydn_104_opening],
             Color.NONE: [swapside, haydn_104_opening],
             Color.LIGHT_GREY: [khai, haydn_104_opening]
         }
@@ -58,7 +58,7 @@ class mission_selector(fullbot):
 
             if readcolor == Color.RED:
                 self.hub.display.char(self.numtolet[0])
-            elif readcolor == Color.BLUE:
+            elif readcolor == Color.LIGHT_BLUE:
                 self.hub.display.char(self.numtolet[1])
             elif readcolor == Color.YELLOW:
                 self.hub.display.char(self.numtolet[2])
@@ -68,7 +68,7 @@ class mission_selector(fullbot):
                 self.hub.display.char(self.numtolet[4])
             elif readcolor == Color.WHITE:
                 self.hub.display.char(self.numtolet[5])
-            elif readcolor == Color.DARK_GREY:
+            elif readcolor == Color.LIGHT_GREY:
                 self.hub.display.char(self.numtolet[6])
             elif readcolor == Color.NONE:
                 self.hub.display.icon(Icon.ARROW_LEFT)

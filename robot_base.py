@@ -22,21 +22,21 @@ drive_base.distance_control.stall_tolerances(speed=20, time=100)
 drive_base.heading_control.pid(ki=2500)  # Default ki is around 1500–2000; higher = stronger push when stuck
 
 # Chromatic Colors
-Color.RED = Color(h=356, s=96, v=36)
-Color.MAGENTA = Color(h=325, s=88, v=62)
-Color.ORANGE = Color(h=13, s=88, v=84)
-Color.YELLOW = Color(h=43, s=78, v=58)
+Color.RED = Color(h=354, s=96, v=46) #Color.MAGENTA Color(h=354, s=96, v=66)
+Color.MAGENTA = Color(h=338, s=91, v=54) #Color.RED Color(h=339, s=93, v=39)
+Color.ORANGE = Color(h=14, s=88, v=86)
+Color.YELLOW = Color(h=42, s=78, v=74)
+Color.LIGHT_BLUE = Color(h=196, s=89, v=81)
 
 # Neutral & Ambient Colors
-Color.WHITE = Color(h=165, s=11, v=62)
-Color.LIGHT_GREY = Color(h=195, s=42, v=26)
+Color.WHITE = Color(h=160, s=5, v=95) #Color.WHITE Color(h=173, s=17, v=84)
+Color.LIGHT_GREY = Color(h=193, s=36, v=65) # Color.LIGHT_GREY Color(h=191, s=36, v=55)
 Color.DARK_GREY = Color(h=192, s=46, v=10)
 Color.NONE = Color(h=0, s=0, v=0)
 
-# Register all colors (including custom greys)
 color_sensor.detectable_colors([
     Color.RED,
-    Color.BLUE,
+    Color.LIGHT_BLUE,
     Color.YELLOW,
     Color.MAGENTA,
     Color.ORANGE,
@@ -44,7 +44,6 @@ color_sensor.detectable_colors([
     Color.LIGHT_GREY,
     Color.NONE,
 ])
-
 
 class robot_base_class:
     def __init__(self):
